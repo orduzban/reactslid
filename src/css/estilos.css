@@ -339,12 +339,16 @@ template {
 }
 
 :root {
-  --fondo: #ede9e7;
+  --fondo: #ecded7;
+  --primario: #db8052;
+  --segundario: #160e09;
+  --peligro: #701808;
 }
 
 body {
   background: var(--fondo);
   font-family: "Poppins", sans-serif;
+  color: var(--primario);
 }
 
 main {

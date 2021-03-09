@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const App = () => {
 	return (
 		<main>
-			<Titulo>Productos Dstacadps</Titulo>
+			<Titulo>Productos Destacados</Titulo>
 			<Slideshow />
 		</main>
 	);
