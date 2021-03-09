@@ -1,0 +1,16 @@
+@use './varios/normalizar';
+@use './varios/variables';
+
+
+:root {
+    --fondo: #ede9e7;
+}
+body {
+    background: var(--fondo);
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    max-width: 1000px;
+    margin: 50px;
+    overflow: hidden;
+}
