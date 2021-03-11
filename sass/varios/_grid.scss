@@ -1,0 +1,35 @@
+body {
+    background: var(--fondo);
+    font-family: 'Poppins', sans-serif;
+    color: var(--primario);
+}
+
+.grid_container {
+    margin: 0 auto;
+    display: grid;
+    grid-template: "header header header" "nav main der" 
+                   "footer footer footer";
+    grid-template-columns: 1fr 10fr 1fr ;
+    grid-template-rows: 1fr 9fr 2fr;
+   
+    
+}
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    overflow: hidden;
+}
+
+footer {
+    grid-area: footer;
+}
+.nav_der {
+    grid-area: der;
+}

@@ -1,20 +1,37 @@
 import React from 'react';
 import Slideshow from './componentes/Slideshow';
+
 import './css/estilos.css';
-import styled from 'styled-components';
+import Menu from './componentes/menu/Menu';
+
 
 const App = () => {
 	return (
+		<>
+		<div className= 'grid_container'>
+		<header>
+			<Menu/>
+		</header>
+		<nav>
+			<h1>
+		 Sidebar
+				
+			</h1>
+		</nav>
 		<main>
-			<Titulo>Productos Destacados</Titulo>
+			<h1>Productos Destacados</h1>
 			<Slideshow />
+			
 		</main>
+		<div className= 'nav_der'>
+			Nav derecha
+		</div>
+		<footer>
+			footer
+		</footer>
+		</div>
+		</>
 	);
 };
-const Titulo = styled.p`
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-`;
+
 export default App;

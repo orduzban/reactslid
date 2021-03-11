@@ -343,6 +343,7 @@ template {
   --primario: #db8052;
   --segundario: #160e09;
   --peligro: #701808;
+  --header: #008a93;
 }
 
 body {
@@ -351,10 +352,80 @@ body {
   color: var(--primario);
 }
 
+.grid_container {
+  margin: 0 auto;
+  display: grid;
+  grid-template: "header header header" "nav main der" "footer footer footer";
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 1fr 9fr 2fr;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
 main {
-  max-width: 1000px;
-  margin: 50px;
+  grid-area: main;
   overflow: hidden;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.nav_der {
+  grid-area: der;
+}
+
+header {
+  background: var(--header);
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li:hover > ul {
+  display: block;
+}
+header nav ul li ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: var(--header);
+  display: none;
+}
+header nav ul li ul li {
+  width: 180px;
+  position: relative;
+}
+header nav ul li ul li ul {
+  top: 0;
+  left: 180px;
+  position: absolute;
+}
+header nav ul a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 12px 20px;
+  display: block;
+}
+header nav ul a:hover {
+  background: black;
+}
+header nav .logo img {
+  width: 30px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=estilos.css.map */

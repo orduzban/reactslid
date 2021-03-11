@@ -1,0 +1,50 @@
+header {
+    background: var(--header);
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li:hover > ul{
+                display: block;
+            }
+            li ul {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                background: var(--header);
+                display: none;
+                li {
+                    width: 180px;
+                    position: relative;
+                    ul {
+                        top: 0;
+                        left: 180px;
+                        position: absolute;
+                    }
+                }
+            }
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                padding: 12px 20px;
+                display: block;
+            }
+            a:hover {
+                background: black;
+            }
+        }
+        .logo img {
+        width: 30px;
+        border-radius: 50%;
+        
+    }
+}
+        
+    
+         
+}
